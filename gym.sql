@@ -1,8 +1,3 @@
--- ============================================
--- Gym-Datenbank Prototyp
--- Wirtschaftsinfo - Datenbanken
--- ============================================
-
 -- Tabellen erstellen
 CREATE TABLE IF NOT EXISTS nutzer (
     nutzer_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -29,9 +24,6 @@ CREATE TABLE IF NOT EXISTS trainingssaetze (
     FOREIGN KEY (maschine_id) REFERENCES maschinen(maschine_id)
 );
 
--- ============================================
--- TESTDATEN EINFÜGEN
--- ============================================
 
 -- 10 Nutzer
 INSERT INTO nutzer (vorname, nachname, email) VALUES
